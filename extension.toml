@@ -1,6 +1,6 @@
 id = "pbxproj"
 name = "Xcode Project"
-description = "Xcode Project syntax highlighting"
+description = "Xcode project and strings syntax highlighting"
 version = "0.1"
 schema_version = 1
 authors = ["Zachary Waldowski <zach@waldowski.me>"]

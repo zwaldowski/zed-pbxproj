@@ -1,9 +1,9 @@
 name = "Xcode Project"
 grammar = "property_list"
 path_suffixes = ["pbxproj"]
-line_comments = ["// "]
-hard_tabs = true
-autoclose_before = ";,>)}"
+first_line_patterns = [
+    "^// !\\$\\*UTF8\\*\\$!"
+]
 brackets = [
     { start = "{", end = "}", close = true, newline = true },
     { start = "(", end = ")", close = true, newline = true },
@@ -12,6 +12,7 @@ brackets = [
     { start = "'", end = "'", close = true, newline = false, not_in = ["string", "comment"] },
     { start = "/* ", end = " */", close = true, newline = false, not_in = ["string", "comment"] },
 ]
-first_line_patterns = [
-    "^// !\\$\\*UTF8\\*\\$!"
-]
+autoclose_before = ";,>)}"
+line_comments = ["// "]
+block_comment = { start = "/*", prefix="", end = "*/", tab_size = 2 }
+hard_tabs = true

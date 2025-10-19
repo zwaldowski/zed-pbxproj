@@ -1,10 +1,10 @@
 # zed-pbxproj
 
-This Zed extension provides syntax highlighting for Xcode project files (`.pbxproj`) to make it easier to resolve merge conflicts.
+This Zed extension provides syntax highlighting for Xcode project (`.pbxproj`) and strings (`.strings`) files to make it easier to resolve merge conflicts.
 
 ## Usage
 
-Language support engages automatically when editing a file with the `.pbxproj` extension.
+Language support engages automatically when editing files with the `.pbxproj` or `.strings` extensions.
 
 ## Acknowledgements
 
