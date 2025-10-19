@@ -1,5 +1,3 @@
-;; Synced with: https://github.com/Formkunft/tree-sitter-property-list/blob/main/queries/highlights.scm
-
 (line_comment) @comment.line
 (block_comment) @comment.block
 
@@ -7,13 +5,13 @@
 
 (string) @string
 
-(escape_sequence) @constant.character.escape
+(escape_sequence) @string.escape
 
 (dictionary_entry
   key: (string) @property)
 
 (data) @string.special
-(byte) @numeric
+(byte) @number
 
 [
   "("
@@ -22,6 +20,7 @@
   "}"
   "<"
   ">"
+  "\""
 ] @punctuation.bracket
 
 [
