@@ -1,11 +1,11 @@
 id = "pbxproj"
 name = "Xcode Project"
 description = "Xcode project and strings syntax highlighting"
-version = "0.1"
+version = "0.2.0"
 schema_version = 1
 authors = ["Zachary Waldowski <zach@waldowski.me>"]
 repository = "https://github.com/zwaldowski/zed-pbxproj"
 
 [grammars.property_list]
-repository = "https://github.com/zwaldowski/tree-sitter-property-list"
-commit = "5645d5502b1f6cddc9ab4b1b36807e1a4d32e018"
+repository = "https://github.com/Formkunft/tree-sitter-property-list"
+commit = "31ff8b0a6dda1b88c8f24b0bc376a0ae573607b2"
